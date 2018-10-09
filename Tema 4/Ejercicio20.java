@@ -12,9 +12,9 @@
   public class Ejercicio20 {
 	public static void main(String[] args) {
 		
-		System.out.println ("Este programa detecta si un numero es capicua.");
+  System.out.println ("Este programa detecta si un numero es capicua.");
 		
-    System.out.println ("Introduce un numero");
+  System.out.println ("Introduce un numero");
     
     int numero = Integer.parseInt(System.console().readLine());
     boolean capicua = false;

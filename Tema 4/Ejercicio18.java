@@ -12,12 +12,12 @@
   public class Ejercicio18 {
 	public static void main(String[] args) {
 		
-		System.out.println ("Este programa dice la primera cifra de un numero de maximo 5 cifras");
+    System.out.println ("Este programa dice la primera cifra de un numero de maximo 5 cifras");
     
     System.out.println ("Introduce un numero");
     
-    int numero, primera = 0;
-    numero = Integer.parseInt(System.console().readLine());
+    int numero = Integer.parseInt(System.console().readLine());
+    int primera = 0;
     
     if ( numero < 10 ) {
       primera = numero;
