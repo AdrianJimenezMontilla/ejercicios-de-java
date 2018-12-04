@@ -261,6 +261,56 @@ public static int quitaPorDetras(int x, int n) {
 return (int)quitaPorDetras((long) x, n);
 }
 
+/**
+* Ejercicio 12
+* Añade un dígito a un número por delante (por la izquierda).
+*
+* @param x número entero
+* @param d dígito que se le va a pegar por la izquierda
+* @return número inicial <code>x</code> con el dígito <code>d</code> pegado
+*
+por la izquierda
+*/
+public static long pegaPorDelante(long x, int d) {
+  return juntaNumeros(d, x);
+}
+
+/**
+* Añade un dígito a un número por delante (por la izquierda).
+*
+* @param x número entero
+* @param d dígito que se le va a pegar por la izquierda
+* @return número inicial <code>x</code> con el dígito <code>d</code> pegado
+*
+por la izquierda
+*/
+public static int pegaPorDelante(int x, int d) {
+return (int)pegaPorDelante((long)x, d);
+}
+/**
+* Ejercicio 14
+* Pega dos números para formar uno solo.
+*
+* @param x trozo que se pegará por la izquierda
+* @param y trozo que se pegará por la derecha
+* @return número compuesto de los trozos <code>x</code> e <code>y</code>
+*/
+public static long juntaNumeros(long x, long y) {
+return (long)(x * potencia(10, digitos(y))) + y;
+}
+/**
+* Pega dos números para formar uno solo.
+*
+* @param x trozo que se pegará por la izquierda
+* @param y trozo que se pegará por la derecha
+* @return número compuesto de los trozos <code>x</code> e <code>y</code>
+*/
+public static int juntaNumeros(int x, int y) {
+return (int)(juntaNumeros((long)x, (long)y));
+}
+
+
+
 
 }
 
