@@ -109,13 +109,36 @@ public static double potencia (int base, int exponente) {
 * @param x número al que se le quieren contar los dígitos
 * @return número de dígitos que tiene el número que se pasa como parámetro
 */
-    
-
-
+public static int digitos (long x) {
+  if ( x < 0) {
+    x = -x;
+  }
+  
+  if (x == 0) {
+    return 1;
+  
+  } else {
+    int n = 0;
+    while (x > 0) {
+      x = x / 10;
+      n++;
+    }
+    return n;
+  }
+}
+/**
+* Cuenta el número de dígitos de un número entero.
+*
+* @param x número al que se le quieren contar los dígitos
+* @return número de dígitos que tiene el número que se pasa como parámetro
+*/
+public static int digitos(int x) {
+  return digitos ((long)x);
+}
 
 
 /**
-* Ejercicio7 
+* Ejercicio 6 
 *Le da la vuelta a un número.
 *
 * @param x número al que se le quiere dar la vuelta
@@ -144,5 +167,43 @@ public static long voltea(long x) {
 public static int voltea(int x) {
   return (int)voltea((long)x);
 }
+
+/**
+ * Ejercicio 7
+/* Devuelve el dígito que está en la posición <code>n</code> de un número
+* entero. Se empieza contando por el 0 y de izquierda a derecha.
+*
+* @param x número entero
+* @param n posición dentro del número <code>x</code>
+* @return dígito que está en la posición n del número <code>x</code>
+*
+empezando a contar por el 0 y de izquierda a derecha
+*/
+public static int digitoN(long x, int n) {
+  x = voltea(x);
+  
+  while(n-- > 0) {
+    x = x / 10;
+  }
+  
+  return (int)x %10;
+}
+
+/**
+/* Devuelve el dígito que está en la posición n de un número entero. Se
+* empieza contando por el 0 y de izquierda a derecha.
+*
+* @param x número entero
+* * @param n posición dentro del número <code>x</code>
+* @return dígito que está en la posición n del número <code>x</code>
+*
+empezando a contar por el 0 y de izquierda a derecha
+*/
+public static int digitoN(int x, int n) {
+return digitoN((long)x, n);
+}
+
+
+
 }
 
