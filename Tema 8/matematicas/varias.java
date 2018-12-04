@@ -262,6 +262,33 @@ return (int)quitaPorDetras((long) x, n);
 }
 
 /**
+* Ejercicio 11
+* Añade un dígito a un número por detrás (por la derecha).
+*
+* @param x número entero
+* @param d dígito que se le va a pegar por la derecha
+* @return número inicial <code>x</code> con el dígito <code>d</code> pegado
+*
+por la derecha
+*/
+public static long pegaPorDetras(long x, int d) {
+  return juntaNumeros (x, d);
+}
+
+/**
+* Añade un dígito a un número por detrás (por la derecha).
+*
+* @param x número entero
+* @param d dígito que se le va a pegar por la derecha
+* @return número inicial <code>x</code> con el dígito <code>d</code> pegado
+*
+por la derecha
+*/
+public static int pegaPorDetras(int x, int d) {
+return (int)pegaPorDetras((long)x, d);
+}
+
+/**
 * Ejercicio 12
 * Añade un dígito a un número por delante (por la izquierda).
 *

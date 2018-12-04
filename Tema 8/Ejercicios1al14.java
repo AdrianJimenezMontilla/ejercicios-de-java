@@ -54,6 +54,9 @@ public class Ejercicios1al14 {
     System.out.println ("Si al 45678 le quito por detras 2, se queda como: " + matematicas.varias.quitaPorDetras(45678, 2));
     System.out.println ("Si al 98765432 le quito por detras 6, se queda como: " + matematicas.varias.quitaPorDetras(98765432, 6));
     
+    // Pega por detras //
+    System.out.println ("Si al 230 le pego el 25 POR DETRAS se queda como: " + matematicas.varias.pegaPorDetras(230, 25));
+    System.out.println ("Si al 230356 le pego el 870 POR DETRAS se queda como: " + matematicas.varias.pegaPorDetras(230356 , 870));
     // Pega por delante //
     System.out.println ("Si al 230 le pego el 25 POR DELANTE se queda como: " + matematicas.varias.pegaPorDelante(230, 25));
     System.out.println ("Si al 230356 le pego el 870 POR DELANTE se queda como: " + matematicas.varias.pegaPorDelante(230356 , 870));
