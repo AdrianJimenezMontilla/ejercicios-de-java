@@ -46,6 +46,13 @@ public class Ejercicios1al14 {
     System.out.println ("En la posicion 4 del 45678 esta el : " + matematicas.varias.digitoN(45678, 4));
     System.out.println ("En la posicion 3 del 23456789 esta el : " + matematicas.varias.digitoN(23456789, 3));
     
+    // Posicion de digitos //
+    System.out.println ("En el 45678 el digito 6 esta en la posicion: " + matematicas.varias.posicionDeDigito(45678, 6));
+    System.out.println ("En el 98765432 el digito 3 esta en la posicion: " + matematicas.varias.posicionDeDigito(98765432, 3));
+    
+    //Quira por detras //
+    System.out.println ("Si al 45678 le quito por detras 2, se queda como: " + matematicas.varias.quitaPorDetras(45678, 2));
+    System.out.println ("Si al 98765432 le quito por detras 6, se queda como: " + matematicas.varias.quitaPorDetras(98765432, 6));
     
   }
 }

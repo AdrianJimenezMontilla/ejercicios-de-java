@@ -202,7 +202,64 @@ empezando a contar por el 0 y de izquierda a derecha
 public static int digitoN(int x, int n) {
 return digitoN((long)x, n);
 }
-
+/**
+* Ejercicio 8
+* Da la posición de la primera ocurrencia de un dígito dentro de un número
+* entero. Si no se encuentra, devuelve -1.
+*
+* @param x número entero
+* @param d dígito a buscar dentro del número
+* @return posición de la primera ocurrencia del dígito dentro del número o
+*
+-1 si no se encuentra
+*/
+public static int posicionDeDigito(long x, int d) {
+  int i;
+  for (i = 0; (i < digitos(x)) && (digitoN(x, i) != d); i++) {};
+  if (i == digitos(x)) {
+    return -1;
+  } else {
+    return i;
+  }
+}
+/**
+* Da la posición de la primera ocurrencia de un dígito dentro de un número
+* entero. Si no se encuentra, devuelve -1.
+*
+* @param x número entero
+* @param d dígito a buscar dentro del número
+* @return posición de la primera ocurrencia del dígito dentro del número o
+*
+-1 si no se encuentra
+*/
+public static int posicionDeDigito(int x, int d) {
+return posicionDeDigito((long)x, d);
+}
+/**
+* Ejercicio 9
+* Le quita a un número <code>n</code> dígitos por detrás (por la derecha).
+*
+* @param x número entero
+* @param n número de dígitos que se le van a quitar
+* @return número inicial <code>x</code> con <code>n</code> dígitos menos
+*
+quitados de la derecha
+*/
+public static long quitaPorDetras(long x, int n) {
+  return x / (long)potencia(10, n);
+}
+/**
+* Le quita a un número <code>n</code> dígitos por detrás (por la derecha).
+*
+* @param x número entero
+* @param n número de dígitos que se le van a quitar
+* @return número inicial <code>x</code> con <code>n</code> dígitos menos
+*
+quitados de la derecha
+*/
+public static int quitaPorDetras(int x, int n) {
+return (int)quitaPorDetras((long) x, n);
+}
 
 
 }
