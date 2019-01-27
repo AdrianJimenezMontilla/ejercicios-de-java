@@ -4,10 +4,10 @@
 */
 
 public abstract class Vehiculo {
-// Atrubutos de clase
+// Atrubutos de clase ( valor para toda la clase)
   private static int kilometrosTotales = 0;
   private static int vehiculosCreados = 0;
-// Atributos de instancia
+// Atributos de instancia ( los que no llevan static))
   private int kilometrosRecorridos;
   
   public Vehiculo() {

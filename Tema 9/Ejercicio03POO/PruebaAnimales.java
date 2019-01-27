@@ -25,5 +25,6 @@ public class PruebaAnimales {
     Canario figaro = new Canario(Sexo.HEMBRA);
     figaro.canta();
     figaro.ponHuevo();
+    figaro.vuela();
   }
 }

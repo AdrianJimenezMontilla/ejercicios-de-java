@@ -3,7 +3,7 @@ public class Bicicleta extends Vehiculo {
   private int marchas;
   
   public Bicicleta(int m) {
-    super();
+    super(); // llama al constructor
     this.marchas = m;
   }
 

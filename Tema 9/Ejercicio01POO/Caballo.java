@@ -9,10 +9,10 @@
 public class Caballo {
 
 // atributos
-  String nombre;
-  String raza;
-  String color;
-  int edad;
+  private String nombre;
+  private String raza;
+  private String color;
+  private int edad;
 // constructor
 Caballo (String n, String r, String c, int e) {
   this.nombre = n;
